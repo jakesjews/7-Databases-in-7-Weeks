@@ -1,0 +1,31 @@
+{
+    "inputs":
+    {
+        "bucket":"rooms",
+        "key_filters":
+        [
+            ["string_to_int"],
+            ["between", 4200, 4300]
+        ]
+    },
+    "query":
+    [
+        {
+            "map":
+            {
+                "language":"javascript",
+                "bucket":"my_functions",
+                "key":"map_floor_cap"
+            }
+        },
+        {
+            "reduce":
+            {
+                "language":"javascript",
+                "bucket":"my_functions",
+                "key":"reduce_floor_cap"
+            }
+        }
+    ]
+}
+
