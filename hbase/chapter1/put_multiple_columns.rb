@@ -14,4 +14,3 @@ p.add( *jbytes( "revision", "author", "jimbo" ) )
 p.add( *jbytes( "revision", "comment", "My first edit" ) )
 
 table.put( p )
-

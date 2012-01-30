@@ -1,9 +1,5 @@
-CREATE OR REPLACE FUNCTION find_movies
-(
-  search text
-) 
-RETURNS TABLE(movie text) AS 
-$$ 
+CREATE OR REPLACE FUNCTION find_movies( search text ) 
+RETURNS TABLE(movie text) AS $$ 
 
 DECLARE
   actor_best float;
@@ -64,7 +60,4 @@ BEGIN
   END IF;
 END;
 
-$$
-
-LANGUAGE plpgsql;
-
+$$ LANGUAGE plpgsql;
