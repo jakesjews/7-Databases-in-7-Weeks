@@ -1,0 +1,1 @@
+printjson( {"hello" : "world"} )
