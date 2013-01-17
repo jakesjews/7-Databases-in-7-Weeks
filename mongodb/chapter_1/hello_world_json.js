@@ -1,1 +1,0 @@
-printjson( {"hello" : "world"} )
